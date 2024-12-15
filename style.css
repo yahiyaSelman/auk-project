@@ -22,10 +22,10 @@ body{
 }
 
 .chat-app-container{
-  height: 95%;
-  width: 80%;
-  background-color: #000000c3;
-  border-radius: 20px;
+  height: 85%;
+  width: 70%;
+  background-color: #882b33;
+  border-radius: 15px;
   overflow: hidden;
 }
 
