@@ -1,4 +1,4 @@
-# AI Assistant
+# Scholarship AI Assistant
 welcome to the start of the AUK scholarship assistant AI. Currently, this website holds the gemini API and allows the user to ask it simple questions like any NLP AI available at the moment. 
 
 
