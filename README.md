@@ -25,11 +25,11 @@ To set up and run this project locally, make sure you have Node.js installed on 
 
 1. *Clone Repository:* Clone this repository to your local machine using the following command:
   ``` 
-   git clone https://github.com/ManikMaity/Friendly-AI-Assistant.git
+  git clone https://github.com/yahiyaSelman/auk-project.git
 ```
 2. *Install Dependencies:* Navigate to the project directory and install dependencies using npm:
 ```   
-   cd Friendly-AI-Assistant
+   cd auk-project
    npm install
    ```
 
