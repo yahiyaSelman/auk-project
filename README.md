@@ -5,19 +5,17 @@ welcome to the start of the AUK scholarship assistant AI. Currently, this websit
 ## Table of Contents
 
 - [Description](#description)
-- [Preview](#preview)
 - [Demo](#demo)
 - [Features](#features)  <!-- Add Features Section -->
 - [Technologies Used](#technologies-used)
 - [Usage](#usage)
 - [Acknowledgments](#acknowledgments)
-- [Contact](#contact)
 
 ---
 
 ## Description
 
-The Friendly AI Assistant is a chat app designed to provide users with concise and friendly answers to their queries. Developed using HTML, CSS, and Vanilla JavaScript, with support from Vite and Gemini API, this app ensures a responsive experience across all devices. Users can interact with the AI to ask questions and receive clear responses. The app includes robust error handling to maintain smooth functionality. Integration with Gemini 1.0 Pro API enhances response accuracy, while chat history tracking enables the provision of relevant answers based on previous interactions.
+The scholarship AI Assistant is a chat app designed to provide users with concise and direct answers to their queries. Developed using HTML, CSS, and Vanilla JavaScript, with support from Vite and Gemini API, this app ensures a responsive experience across all devices. Users can interact with the AI to ask questions and receive clear responses. The app includes robust error handling to maintain smooth functionality. Integration with Gemini 1.0 Pro API enhances response accuracy, while chat history tracking enables the provision of relevant answers based on previous interactions.
 
 ---
 
