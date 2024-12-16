@@ -50,45 +50,11 @@ Here are some key features of this app:
 - Gemini API
 ---
 
-## Usage
-
-To set up and run this project locally, make sure you have Node.js installed on your machine. Then, follow these steps:
-
-1. *Clone Repository:* Clone this repository to your local machine using the following command:
-  ``` 
-   git clone https://github.com/ManikMaity/Friendly-AI-Assistant.git
-```
-2. *Install Dependencies:* Navigate to the project directory and install dependencies using npm:
-```   
-   cd Friendly-AI-Assistant
-   npm install
-   ```
-
-3. *Run Development Server:* Start the development server using Vite:
-  ``` 
-   npm run dev
-```
-4. *Open in Browser:* Open your browser and navigate to http://localhost:3000 to view the app.
-
-5. *Enter Gemini API Key:* After opening the app in your browser, a prompt will appear asking for your Gemini API Key. Enter your API Key in the text area provided. [Get Your Gemini API Key](https://aistudio.google.com/app/apikey).
-
-Once you've entered your API Key, you can start using the Friendly AI Assistant chat app to ask questions and receive responses.👨‍💻
-
-
----
-
 ## Acknowledgments
 
 This project wouldn't be possible without the following:
 
 [Gemini API](https://ai.google.dev/gemini-api/docs/get-started/web)
-
----
-
-## Contact
-
-- Manik Maity -[manikmaity010@gmail.com]
-- [My LinkedIn](https://www.linkedin.com/in/manikmaity/)
 
 ---
 
