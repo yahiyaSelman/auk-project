@@ -1,5 +1,5 @@
-# Friendly AI Assistant
-Welcome to the Friendly AI Assistant repository! This chat app provides concise and friendly answers to user queries. Built using HTML, CSS, and Vanilla JavaScript, with the assistance of Vite and Gemini API, this app is designed to be responsive across all devices. 🤖📱
+# AI Assistant
+welcome to the start of the AUK scholarship assistant AI. Currently, this website holds the gemini API and allows the user to ask it simple questions like any NLP AI available at the moment. 
 
 
 ## Table of Contents
@@ -17,27 +17,14 @@ Welcome to the Friendly AI Assistant repository! This chat app provides concise 
 
 ## Description
 
-The Friendly AI Assistant is a chat app designed to provide users with concise and friendly answers to their queries. Developed using HTML, CSS, and Vanilla JavaScript, with support from Vite and Gemini API, this app ensures a responsive experience across all devices. Users can interact with the AI to ask questions and receive clear responses. The app includes robust error handling to maintain smooth functionality. Integration with Gemini 1.0 Pro API enhances response accuracy, while chat history tracking enables the provision of relevant answers based on previous interactions. 🚀💬
+The Friendly AI Assistant is a chat app designed to provide users with concise and friendly answers to their queries. Developed using HTML, CSS, and Vanilla JavaScript, with support from Vite and Gemini API, this app ensures a responsive experience across all devices. Users can interact with the AI to ask questions and receive clear responses. The app includes robust error handling to maintain smooth functionality. Integration with Gemini 1.0 Pro API enhances response accuracy, while chat history tracking enables the provision of relevant answers based on previous interactions.
 
 ---
-
-## Preview
-
-### Desktop Preview
-<img src="./assets/desktop-preview.png" alt="Desktop preview">
-
-### Mobile Preview
-<img src="./assets/mobile-preview.png" height="600px" alt="Mobile preview">
-
----
-
 
 
 ## Demo
 
-### [Link to Live Demo](https://friendly-ai-assistant.netlify.app/)
-
-You can see the project in action by visiting the [live demo](https://friendly-ai-assistant.netlify.app/).
+You can see the project in action by visiting the [live demo](https://aukscholarshipai.netlify.app)
 
 ---
 
@@ -45,12 +32,12 @@ You can see the project in action by visiting the [live demo](https://friendly-a
 
 Here are some key features of this app:
 
-- *🗣 Interactive Chat:* Chat with the AI and get friendly responses.
-- *📝 Concise Answers:* Get clear and to-the-point responses to your queries.
-- *🛠 Error Handling:* Smoothly manages unexpected errors.
-- *📱 Responsive Design:* Works well on all devices.
-- *🚀 Gemini 1.0 Pro API Integration:* Enhanced capabilities and accurate responses.
-- *📜 Chat History:* Keeps track of previous interactions for relevant answers.
+-  Interactive Chat: Chat with the AI and get friendly responses.
+-  Concise Answers: Get clear and to-the-point responses to your queries.
+-  Error Handling: Smoothly manages unexpected errors.
+-  Responsive Design: Works well on all devices.
+-  Gemini 1.0 Pro API Integration: Enhanced capabilities and accurate responses.
+-  Chat History: Keeps track of previous interactions for relevant answers.
 
 ---
 
