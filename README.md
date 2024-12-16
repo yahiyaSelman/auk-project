@@ -5,6 +5,7 @@ welcome to the start of the AUK scholarship assistant AI. Currently, this websit
 ## Table of Contents
 
 - [Description](#description)
+- [Usage](#usage)
 - [Demo](#demo)
 - [Features](#features)  <!-- Add Features Section -->
 - [Technologies Used](#technologies-used)
