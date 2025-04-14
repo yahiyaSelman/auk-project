@@ -1,6 +1,6 @@
 import "./style.css";
 import { GoogleGenerativeAI } from "@google/generative-ai";
-
+import { searchDocuments } from './retrieval';
 
 
 let apiKey;
