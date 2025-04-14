@@ -124,17 +124,18 @@ function convertAiMsgHTML(id){
 </div>
 `;
 }
-async function generate(prompt, userMsg) {
+
+async function generate(prompt, userQuery) {
   try {
     // Retrieve relevant documents based on the user's query
-    const retrievedDocs = searchDocuments(userMsg);
+    const retrievedDocs = searchDocuments(userQuery);
 
     // Retrieved documents into the full query
     const fullQuery = `
       ${prompt} 
       Here is some relevant information to help answer the question:
       ${retrievedDocs.map(doc => doc.content).join('\n')}
-      Now answer the user's question: ${userMsg}
+      Now answer the user's question: ${userQuery}
     `;
 
     const result = await model.generateContent(fullQuery);
@@ -147,6 +148,7 @@ async function generate(prompt, userMsg) {
     throw error;
   }
 }
+
 async function aiMsg (ele, userMsg = ""){
   const aiMsgEle = ele.querySelector(".msg-text");
   const loaderEle = ele.querySelector(".loader");
