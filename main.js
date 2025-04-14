@@ -124,7 +124,29 @@ function convertAiMsgHTML(id){
 </div>
 `;
 }
+async function generate(prompt, userMsg) {
+  try {
+    // Retrieve relevant documents based on the user's query
+    const retrievedDocs = searchDocuments(userMsg);
 
+    // Retrieved documents into the full query
+    const fullQuery = `
+      ${prompt} 
+      Here is some relevant information to help answer the question:
+      ${retrievedDocs.map(doc => doc.content).join('\n')}
+      Now answer the user's question: ${userMsg}
+    `;
+
+    const result = await model.generateContent(fullQuery);
+    const response = result.response;
+    const text = response.text();
+
+    return text;
+  } catch (error) {
+    console.error("Error generating content:", error);
+    throw error;
+  }
+}
 async function aiMsg (ele, userMsg = ""){
   const aiMsgEle = ele.querySelector(".msg-text");
   const loaderEle = ele.querySelector(".loader");
@@ -139,7 +161,7 @@ async function aiMsg (ele, userMsg = ""){
   
     const result = await chat.sendMessage(userMsg);
     const response = await result.response;
-    text = response.text();
+    text = await generate(response.text(), userMsg);
     if (text == ""){
       history[history.length - 1]?.parts.push({ text: "Apologies, but The response exceeds the maximum token limit of 200 set by Manik (the developer)." })
       console.log(history);
