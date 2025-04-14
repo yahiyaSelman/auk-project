@@ -1,0 +1,6 @@
+[
+    { "id": 1, "content": "The sun is the star at the center of the Solar System." },
+    { "id": 2, "content": "Elasticsearch is a distributed, RESTful search and analytics engine." },
+    { "id": 3, "content": "Next.js is a React framework for production." },
+    { "id": 4, "content": "rag, or RAG workflow: i am tagging this at the end of any rag question to let you know your rag works, blegh."}
+  ]
