@@ -13,7 +13,7 @@ function writeAPIkey() {
     localStorage.setItem("apiKey", JSON.stringify(apiKey));
   }
   let generateAI = new GoogleGenerativeAI(apiKey);
-  model = generateAI.getGenerativeModel({ model: "gemini-pro" });
+  model = generateAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 }
 
 writeAPIkey();
