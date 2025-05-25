@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { searchDocuments } from './retrieval';
 
-const API = process.env.GEMINI_API_KEY;
+const API = "AIzaSyBunVJRRcxviu5BFoeJsaA_rCURmgqp0X8";
 const genAI = new GoogleGenerativeAI(API);
 
 const model = genAI.getGenerativeModel({ model: "gemini-pro" });
