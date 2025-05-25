@@ -4,19 +4,30 @@ import { searchDocuments } from './retrieval';
 import {generate} from './rag';
 
 let apiKey;
-let model;
 
-function writeAPIkey() {
-  apiKey = JSON.parse(localStorage.getItem("apiKey"));
-  if (apiKey == null || apiKey == ""){
-    apiKey = prompt("Enter Gemini API key");
-    localStorage.setItem("apiKey", JSON.stringify(apiKey));
+
+export default async function handler(req, res) {
+  if (req.method === "POST") {
+    const { message } = req.body;
+
+    if (!process.env.GEMINI_API_KEY) {
+      return res.status(500).json({ error: "API key is missing" });
+    }
+
+    try {
+      const prompt = `You are a friendly and efficient customer support assistant. Provide clear, accurate, and concise answers to users' questions or issues. Keep responses informative and limited to 1-2 lines`;
+
+      const responseText = await generate(prompt, message);
+
+      res.status(200).json({ reply: responseText });
+    } catch (error) {
+      res.status(500).json({ error: "Internal Server Error" });
+    }
+  } else {
+    res.setHeader("Allow", ["POST"]);
+    res.status(405).end(`Method ${req.method} Not Allowed`);
   }
-  let generateAI = new GoogleGenerativeAI(apiKey);
-  model = generateAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 }
-
-writeAPIkey();
 
 const sentMessageBtn = document.querySelector(".msger-send-btn");
 const messageInputArea = document.querySelector(".msger-input");
@@ -123,30 +134,6 @@ function convertAiMsgHTML(id){
   </div>
 </div>
 `;
-}
-
-async function generate(prompt, userQuery) {
-  try {
-    // Retrieve relevant documents based on the user's query
-    const retrievedDocs = searchDocuments(userQuery);
-
-    // Retrieved documents into the full query
-    const fullQuery = `
-      ${prompt} 
-      Here is some relevant information to help answer the question:
-      ${retrievedDocs.map(doc => doc.content).join('\n')}
-      Now answer the user's question: ${userQuery}
-    `;
-
-    const result = await model.generateContent(fullQuery);
-    const response = result.response;
-    const text = response.text();
-
-    return text;
-  } catch (error) {
-    console.error("Error generating content:", error);
-    throw error;
-  }
 }
 
 async function aiMsg (ele, userMsg = ""){
